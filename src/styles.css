@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("image/pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    width: 100vw;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-size: 4rem;
+}
+
+.main {
+    width: 100vw;
+    height: 75vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: max(30vw, 500px);
+    height: max(30vh, 500px);
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(128, 128, 128, 0.8);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.main-container > p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.home-img {
+    width: max(10vw, 200px);
+    height: auto;
+    border-radius: 50%;
+}
+
+.footer {
+    width: 100vw;
+    height: 5vh;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > div {
+    color: white;
+}
+
+button {
+    all: unset;
+    color: white;
+    transition: all .5 ease-in-out;
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+button:hover {
+    transform: translateY(10px)
+}
+
+button:focus {
+    border-bottom: 2px solid white;
+}
+
+.hello {
+    font-size: 64px;
+    color: blue;
+}
