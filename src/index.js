@@ -1,17 +1,36 @@
 import _ from 'lodash';
 import './styles.css';
 import createHome from './home';
+import createMenu from './menu';
+import createContact from './contact';
 
+const hometab = document.getElementById("home-tab");
+const menutab = document.getElementById("menu-tab");
+const contacttab = document.getElementById("contact-tab");
 
-function createContent() {
-  const element = document.createElement('div');
-
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-  return element;
+function starterContent() {
+  createHome();
 }
 
-document.body.appendChild(createContent());
+function clearContent() {
+  const element = document.querySelector('.main');
+  element.textContent = "";
+}
+
+hometab.addEventListener("click", () => {
+  clearContent();
+  createHome();
+});
+
+menutab.addEventListener("click", () => {
+  clearContent();
+  createMenu();
+});
+
+contacttab.addEventListener("click", () => {
+  clearContent();
+  createContact();
+});
+
+starterContent();
  
