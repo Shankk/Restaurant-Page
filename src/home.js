@@ -1,3 +1,5 @@
+import chef from './image/chef.jpg'
+
 function createHome() {
     const main = document.querySelector('.main')
     const home = document.createElement('div')
@@ -10,7 +12,7 @@ function createHome() {
     paraOne.textContent = "Best pizza in your town"
     paraTwo.textContent = "Made with love since 1937"
     icon.classList.add('home-img')
-    icon.src = "/src/image/chef.jpg"
+    icon.src = chef
     paraThree.textContent = "Order online or visit us!"
 
     home.appendChild(paraOne);

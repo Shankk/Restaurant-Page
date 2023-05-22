@@ -1,3 +1,5 @@
+import map from './image/location.png'
+
 function createContact() {
     const main = document.querySelector('.main')
     const contact = document.createElement('div')
@@ -8,7 +10,7 @@ function createContact() {
     const location = document.createElement('img')
     address.textContent = "1 Dundas St E, Toronto, ON M5B 2R8"
     phone.textContent = "(123) 456-7890"
-    location.src = "/src/image/location.png"
+    location.src = map
 
     contact.appendChild(address);
     contact.appendChild(phone);
